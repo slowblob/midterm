@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Happy Monkey", cursive;
+    src: url(HappyMonkey-Regular.ttf);
+}
+body{
+    background-color: #B3E7FF;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    min-width: 95vw;
+}
+h1{
+    text-align: center;
+    font-family: "Happy Monkey", cursive;
+    font-size: 4rem;
+    color: #D9B706;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+}
+a:after{
+    color: rgb(124, 124, 124);
+}
+button{
+    height:3.5rem;
+    border-radius: 1rem;
+    font-size:2rem;
+    background-color: #C8FFB3;
+    box-shadow: 5px 5px 4px #6da059;
+    border-color: rgb(103, 103, 103);
+}
+button:hover{
+    height: 4rem;
+}
+#img{
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving{
+0%{
+    margin-left: 100%;
+}
+25%{
+    margin-left: 50%;
+}
+50%{
+    margin-left:0%
+}
+75%{
+    margin-left: -50%;
+}
+100%{
+    margin-left:-100%;
+}
+}

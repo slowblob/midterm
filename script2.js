@@ -26,6 +26,7 @@ function again(){
     .then(response => response.json())
     .then(quote => {saying.innerText=quote.quote;
     let character=quote.character;
+    let anime=quote.anime;
     function checkanswer(){
         let answer=document.getElementById('answer').value
         let correct=document.getElementById('correct')
